@@ -1,7 +1,7 @@
 # Este es un archivo README.md
 
 <h1 align="center"> Desarrollo de interfaces </h1>
-![Logotipo de GitHub]https://www.analyticsvidhya.com/wp-content/uploads/2015/07/github_logo-1024x219.png
+![Logotipo de GitHub](https://i.imgur.com/mNposzx.png)
 
 Contiene sintaxis markdown y se usa para:
 
