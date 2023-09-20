@@ -66,15 +66,15 @@ Contiene sintaxis markdown y se usa para:
 - `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2
 - `Funcionalidad 3`: descripción de la funcionalidad 3
 
-## :file_folder: Acceso al proyecto
+## :file_folder:Acceso al proyecto
 
 **Indica cómo se puede descargar o acceder al código fuente del proyecto, ya sea proyecto inicial o final**
 
-## :hammer_and_wrench: Abre y ejecuta el proyecto
+## :hammer_and_wrench:Abre y ejecuta el proyecto
 
 **Muestra las instrucciones necesarias para abrir y ejecutar el proyecto**
 
-## :white_check_mark: Tecnologías utilizadas
+## :white_check_mark:Tecnologías utilizadas
 
 - Java 8
 - Spring Boot
@@ -84,8 +84,7 @@ Contiene sintaxis markdown y se usa para:
 
 ## Personas Desarrolladores del Proyecto
 
-| <img src="https://avatars.githubusercontent.com/u/145338534?v=4" width=115><br><sub>Elba Calvo García</sub> |                                                                                                          |                                                                                                               |
-| :---: | :---: | :---: |
+<img src="https://avatars.githubusercontent.com/u/145338534?v=4" width=115><br><sub>Elba Calvo García</sub>
 
 ## Licencia
 
