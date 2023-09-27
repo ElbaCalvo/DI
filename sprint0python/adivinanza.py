@@ -1,33 +1,53 @@
-adivinanza1 = {
-    'ad1':'¿Qué se encuentra una vez en un minuto, dos veces en un momento pero ninguno en cien años?', 'a':'El silencio.', 'b':'La letra m.', 'c':'El día de mañana.'
-}
+list_dic = [
+    {
+        'ad':'¿Qué se encuentra una vez en un minuto, dos veces en un momento pero ninguno en cien años?',
+        'resp': ['a) El silencio', 'b) La letra m.', 'c) El día de mañana.'],
+        'correc':'b'
+    },
 
-adivinanza2 = {
-    'ad2':'Redondo, redondo, barril sin fondo. ¿Qué es?', 'a':'Un anillo.', 'b':'Una campana.', 'c':'La sombra.'
-}
+    {
+        'ad':'Redondo, redondo, barril sin fondo. ¿Qué es?',
+        'resp': ['a) Un anillo.', 'b) Una campana.', 'c) La sombra.'],
+        'correc':'a'
+    },
 
-adivinanza3 = {
-    'ad3':'Existo cuando me guardan, muero cuando me sacan.', 'a':'La letra h.', 'b':'El abanico.', 'c':'Un secreto.'
-}
+    {
+        'ad':'Existo cuando me guardan, muero cuando me sacan.',
+        'resp': ['a) La letra h.', 'b) El abanico.', 'c) Un secreto.'],
+        'correc':'c'
+    }
+]
 
-for x in adivinanza1.items():
-    print(adivinanza1[x])
+i = 0
+punt = 0
+
+for adiv in list_dic:
     
-print(adivinanza2)
-print(adivinanza3)
+    adivinanza = list_dic[i]['ad']
+    respuestas = list_dic[i]['resp']
+    correcta = list_dic[i]['correc']
+    print ("\nAdivinanza: {} \nRespuestas: {}".format(adivinanza,respuestas))
 
-resp = input("\n- Que opción es la correcta? ")
-respMin = resp.lower()
+    resp = input("\n- Que opción es la correcta? ").lower()
 
-while (respMin != "a") & (respMin != "b") & (respMin != "c"):
-    print ("\n[!] La respuesta marcada no es válida.")
-    resp = input("\n- Que opción es la correcta? ")
-    respMin = resp.lower()
+    while (resp != 'a') & (resp != 'b') & (resp != 'c'):
+        print ("\n[!] La respuesta marcada no es válida.")
+        resp = input("\n- Que opción es la correcta? ").lower()
 
-if respMin=="b":
-    print ("\nHas respondido bien, enorabuena!\n")
-else:
-    print ("\nHas fallado... Vuelve a intentarlo.\n")
+    if resp==list_dic[i]['correc']:
+        print ("\nHas respondido bien, enorabuena!\n")
+        punt = punt + 10
+    else:
+        print ("\nHas fallado... Vuelve a intentarlo.\n")
+        punt = punt - 5
+    
+    i=i+1
+
+print ("\n-> Tu puntuación final ha sido: {}\n".format(punt))
+
+
+
+
 
 
 
