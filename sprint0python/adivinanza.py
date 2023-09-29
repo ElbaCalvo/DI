@@ -1,3 +1,5 @@
+import random
+
 list_dic = [
     {
         'ad':'¿Qué se encuentra una vez en un minuto, dos veces en un momento pero ninguno en cien años?',
@@ -21,12 +23,30 @@ list_dic = [
 i = 0
 punt = 0
 
-for adiv in list_dic:
+respuestas = list_dic[i]['resp']
+correcta = list_dic[i]['correc']
+adivAleat1 = random.sample(list_dic, 1)[0]['ad']
+adivAleat2 = random.sample(list_dic, 1)[0]['ad']
+
+while adivAleat1 == adivAleat2:
+    adivAleat2 = random.sample(list_dic, 1)[0]['ad']
     
-    adivinanza = list_dic[i]['ad']
-    respuestas = list_dic[i]['resp']
-    correcta = list_dic[i]['correc']
-    print ("\nAdivinanza: {} \nRespuestas: {}".format(adivinanza,respuestas))
+for j in list_dic:
+    if adivAleat1 == j['ad']:
+        break
+    
+for t in list_dic:
+    if adivAleat2 == t['ad']:
+        break
+
+for adiv in range(2):    
+    if i == 0:
+        x = j
+    else:
+        x = t
+
+
+    print ("\nAdivinanza: {} \nRespuestas: {}".format(x['ad'],x['resp']))
 
     resp = input("\n- Que opción es la correcta? ").lower()
 
@@ -34,7 +54,7 @@ for adiv in list_dic:
         print ("\n[!] La respuesta marcada no es válida.")
         resp = input("\n- Que opción es la correcta? ").lower()
 
-    if resp==list_dic[i]['correc']:
+    if resp == x['correc']:
         print ("\nHas respondido bien, enorabuena!\n")
         punt = punt + 10
     else:
