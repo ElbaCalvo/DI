@@ -1,0 +1,12 @@
+facil
+casa
+agua
+azul
+normal
+garaje
+cabeza
+guardia
+dificil
+curiosidad
+paracaidas
+coagulacion
