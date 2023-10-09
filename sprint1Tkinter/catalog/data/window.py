@@ -17,16 +17,17 @@ class MainWindow():
         root.title("Frutas")
 
         self.cells = [
-            Cell("Manzana", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\edited\\manzana_ed.jpg"),
-            Cell("Naranja", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\edited\\naranja_ed.jpg"),
-            Cell("Plátano", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\edited\\platano_ed.jpg"),
-            Cell("Pera", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\edited\\pera_ed.jpg"),
-            Cell("Arandanos", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\edited\\arandanos_ed.jpg")
+            Cell("Manzana", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\manzana_uned.jpg"),
+            Cell("Naranja", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\naranja_uned.jpg"),
+            Cell("Plátano", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\platano_uned.jpg"),
+            Cell("Pera", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\pera_uned.jpg"),
+            Cell("Arandanos", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\arandanos_uned.jpg")
         ]
 
         ## Recorremos (con el enumerate), almacenando en cada iteración el elemento iterado y su posición.
 
         for i, cell in enumerate(self.cells):
+
             ## Por cada iteración creamos una etiqueta label con su título e imagen.
             label = ttk.Label(root, image = cell.image_tk, text=cell.title, compound = tk.BOTTOM)
             ## Agregamos la etiqueta a una matriz.
