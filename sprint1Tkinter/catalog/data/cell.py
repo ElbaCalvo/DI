@@ -2,10 +2,10 @@ import tkinter as tk
 from PIL import Image, ImageTk
 
 class Cell:
-    def __init__(self, title, path):
+    def __init__(self, title, path, desc):
         self.title = title
         self.path = path
-
+        self.desc = desc
         ## Reescalamos una imagen dándole nuevos valores al ancho y al alto.
         foto = Image.open(self.path)
         foto_red = foto.resize((100, 100), Image.Resampling.LANCZOS)
