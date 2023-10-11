@@ -3,6 +3,7 @@ from PIL import Image, ImageTk
 
 class Cell:
     def __init__(self, title, path, desc):
+        ## Constructor.
         self.title = title
         self.path = path
         self.desc = desc

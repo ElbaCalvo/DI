@@ -12,11 +12,11 @@ class MainWindow():
     ##   message = "Esto es un/a " + cell.title
     ##   messagebox.showinfo("Frutas", message)
     
-    ## Hacemos una lista de celdas
-
     def __init__(self, root):
+        ## El titulo de la pestaña.
         root.title("Frutas")
 
+        ## Hacemos una lista de celdas.
         self.cells = [
             Cell("Manzana", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\manzana_uned.jpg", "Fruta versátil y nutritiva, fuente de vitaminas y fibra, ideal para meriendas y platos saludables."),
             Cell("Naranja", "C:\\msys64\\home\\Elba\\DI\\sprint1Tkinter\\catalog\\data\\unedited\\naranja_uned.jpg", "La naranja, fruta cítrica, es jugosa, dulce y llena de vitamina C, perfecta para refrescarse y disfrutar."),
