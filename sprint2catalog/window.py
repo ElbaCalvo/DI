@@ -6,7 +6,7 @@ from detail_window import detailWindow
 
 class MainWindow:
     cells = []
-    
+
     def __init__(self, root, json_data):
         ## El titulo de la pestaña.
         root.title("Frutas")
@@ -29,4 +29,4 @@ class MainWindow:
             ## Agregamos la etiqueta a una matriz.
             label.grid(row=i, column=0)
             ## Indicamos que label está pendiente de pulsar el botón izquierdo del ratón sobre la celda.
-            ##label.bind("<Button-1>", lambda event, celda = cell: detailWindow(celda))
+            label.bind("<Button-1>", lambda event, celda = cell: detailWindow(celda))
