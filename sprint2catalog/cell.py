@@ -1,13 +1,18 @@
 import tkinter as tk
+import requests
+from io import BytesIO
 from PIL import Image, ImageTk
 
 class Cell:
-    def __init__(self, title, path, desc):
+    def __init__(self, title, desc, url):
         ## Constructor.
         self.title = title
-        self.path = path
+        self.url = url
         self.desc = desc
-        ## Reescalamos una imagen dándole nuevos valores al ancho y al alto.
-        foto = Image.open(self.path)
-        foto_red = foto.resize((100, 100), Image.Resampling.LANCZOS)
-        self.image_tk = ImageTk.PhotoImage(foto_red)
+
+        ## Convertimos la url a imagen importando requests y BytesIO.
+        response = requests.get(self.url)
+        img_data = Image.open(BytesIO(response.content))
+        self.image_tk = ImageTk.PhotoImage(img_data)
+        
+        
