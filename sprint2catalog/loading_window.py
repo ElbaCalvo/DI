@@ -7,7 +7,11 @@ class LoadingWindow:
     def __init__(self, root):
         self.root = root
         self.root.title("Cargando...") # Título de la ventana.
-        self.root.geometry("170x120") # Definimos el ancho y alto de una ventana.
+
+        x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2 # Obtiene el ancho de la pantalla
+        y = (self.root.winfo_screenheight() - self.root.winfo_reqheight()) / 2 # Obtiene el alto de la pantalla
+        self.root.geometry(f"+{int(x)}+{int(y)}") # Establece la geometría de la ventana de manera que quede centrada
+
         self.root.resizable(False, False) # Evita que la ventana sea redimensionable.
         self.finished = False # Variable para rastrear si la tarea ha finalizado.
         self.json_data = [] # Almacenará los datos JSON descargados.

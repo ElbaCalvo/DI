@@ -8,8 +8,12 @@ class MainWindow:
     cells = []
 
     def __init__(self, root, json_data):
+        self.root = root
         ## El titulo de la pestaña.
-        root.title("Frutas")
+        self.root.title("Frutas")
+        x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2 # Obtiene el ancho de la pantalla
+        y = (self.root.winfo_screenheight() - self.root.winfo_reqheight()) / 2 # Obtiene el alto de la pantalla
+        self.root.geometry(f"+{int(x)}+{int(y)}") # Establece la geometría de la ventana de manera que quede centrada
 
         for fruta in json_data: ## For que recorre los elementos del json.
             name = fruta.get("name")
@@ -19,11 +23,8 @@ class MainWindow:
             cell = Cell(name, description, image_url)
             self.cells.append(cell) # Añade a la lista cell.
 
-
-
         ## Recorremos (con el enumerate), almacenando en cada iteración el elemento iterado y su posición.
         for i, cell in enumerate(self.cells):
-
             ## Por cada iteración creamos una etiqueta label con su título e imagen.
             label = ttk.Label(root, image = cell.image_tk, text=cell.title, compound = tk.BOTTOM)
             ## Agregamos la etiqueta a una matriz.
