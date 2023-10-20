@@ -7,6 +7,9 @@ from detail_window import detailWindow
 class MainWindow:
     cells = []
 
+    def showMenu(self):
+        messagebox.showinfo("Ayuda", "Desarrolladora: Elba.")
+
     def __init__(self, root, json_data):
         self.root = root
         ## El titulo de la pestaña.
@@ -14,6 +17,17 @@ class MainWindow:
         x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2 # Obtiene el ancho de la pantalla
         y = (self.root.winfo_screenheight() - self.root.winfo_reqheight()) / 2 # Obtiene el alto de la pantalla
         self.root.geometry(f"+{int(x)}+{int(y)}") # Establece la geometría de la ventana de manera que quede centrada
+
+        barra = tk.Menu() # Crear una barra de menús.
+        archivo = tk.Menu(barra, tearoff=False) # Crear el primer menú.
+
+        archivo.add_command(
+        label="Acerca del desarrollador",
+        command=self.showMenu
+        )
+
+        barra.add_cascade(menu=archivo, label="Ayuda") # Agregarlo a la barra.
+        self.root.config(menu = barra) # Insertarla en la ventana principal.
 
         for fruta in json_data: ## For que recorre los elementos del json.
             name = fruta.get("name")
