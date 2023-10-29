@@ -1,11 +1,23 @@
 [
     {
-        "0": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado0.jpg",
-        "1": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado1.jpg",
-        "2": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado2.jpg",
-        "3": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado3.jpg",
-        "4": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado4.jpg",
-        "5": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado5.jpg",
-        "6": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado6.jpg"
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado0.jpg"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado1.jpg"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado2.jpg"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado3.jpg"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado4.jpg"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado5.jpg"
+    },
+    {
+        "img": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos_ahorcado2/el_ahorcado6.jpg"
     }
 ]
