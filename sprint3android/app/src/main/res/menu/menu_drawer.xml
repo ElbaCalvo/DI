@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andoid="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Actividades">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/item1"
+                    android:icon="@drawable/catalog_icon"
+                    android:title="Catalog" />
+
+                <item
+                    android:id="@+id/item2"
+                    android:icon="@drawable/about_icon"
+                    android:title="About" />
+            </group>
+        </menu>
+    </item>
+</menu>
