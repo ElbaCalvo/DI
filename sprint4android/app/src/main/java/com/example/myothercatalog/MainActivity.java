@@ -40,18 +40,18 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONArray response){
                         // Procesamiento de la respuesta JSON.
-                        List<FruitsData> allTheRobots = new ArrayList<>();
+                        List<FruitsData> fruitsList = new ArrayList<>();
                         for (int i=0; i<response.length(); i++){
                             try{
                                 JSONObject robot = response.getJSONObject(i);
                                 FruitsData data = new FruitsData(robot);
-                                allTheRobots.add(data);
+                                fruitsList.add(data);
                             }catch (JSONException e){
                                 e.printStackTrace();
                             }
                         }
                         // Creación del adaptador para el RecyclerView y configuración del layout manager.
-                        FruitsRecyclerViewAdapter adapter = new FruitsRecyclerViewAdapter(allTheRobots, activity);
+                        FruitsRecyclerViewAdapter adapter = new FruitsRecyclerViewAdapter(fruitsList, activity);
                         recyclerView.setAdapter(adapter);
                         recyclerView.setLayoutManager(new LinearLayoutManager(activity));
                     }

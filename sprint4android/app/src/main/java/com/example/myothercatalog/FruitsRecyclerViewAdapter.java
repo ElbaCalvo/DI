@@ -27,6 +27,7 @@ public class FruitsRecyclerViewAdapter extends RecyclerView.Adapter<FruitsViewHo
         return new FruitsViewHolder(view); // Devolver un nuevo FruitsViewHolder.
     }
 
+
     public void onBindViewHolder(FruitsViewHolder holder, int position){
         // Obtener los datos para la posición específica y mostrarlos.
         FruitsData dataInPositionToBeRendered = allTheData.get(position);
