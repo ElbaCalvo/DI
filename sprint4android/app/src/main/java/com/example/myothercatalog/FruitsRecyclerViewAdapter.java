@@ -24,9 +24,8 @@ public class FruitsRecyclerViewAdapter extends RecyclerView.Adapter<FruitsViewHo
         // Inflar el diseño de la vista del elemento de la lista.
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.fruits_view_holder, parent, false);
-        return new FruitsViewHolder(view); // Devolver un nuevo FruitsViewHolder.
+        return new FruitsViewHolder(view, allTheData); // Devolver un nuevo FruitsViewHolder.
     }
-
 
     public void onBindViewHolder(FruitsViewHolder holder, int position){
         // Obtener los datos para la posición específica y mostrarlos.

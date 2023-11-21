@@ -12,11 +12,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.List;
+
 public class FruitsViewHolder extends RecyclerView.ViewHolder {
     private final TextView textView;
     private final ImageView imageView;
 
-    public FruitsViewHolder(@NonNull View itemView) {
+    public FruitsViewHolder(@NonNull View itemView, List<FruitsData> allTheData) {
         super(itemView);
         // Inicialización de los elementos.
         textView = (TextView) itemView.findViewById(R.id.fruits_text_view);
@@ -26,13 +28,17 @@ public class FruitsViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View v) {
                 // Acciones al hacer clic en el botón.
-                CallDetailActivity(getAdapterPosition(), itemView.getContext());
+                CallDetailActivity(getAdapterPosition(), itemView.getContext(), allTheData);
             }
         });
     }
 
-    public void CallDetailActivity(int position, Context context){
+    public void CallDetailActivity(int position, Context context, List<FruitsData> allTheData){
         Intent intent = new Intent(context, DetailActivity.class);
+        FruitsData selectedFruit = allTheData.get(position);
+        intent.putExtra("fruit_title", selectedFruit.getName());
+        intent.putExtra("fruit_image", selectedFruit.getImageUrl());
+        intent.putExtra("fruit_description", selectedFruit.getDescription());
         itemView.getContext().startActivity(intent);
     }
 
