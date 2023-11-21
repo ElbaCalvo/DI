@@ -27,5 +27,35 @@
         "name": "Arándanos",
         "description": "Pequeñas joyas azules, llenas de antioxidantes y sabor fresco, perfectas para postres y desayunos.",
         "image_url": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos/arandanos.jpg"
+    },
+
+    {
+        "name": "Manzana",
+        "description": "Fruta versátil y nutritiva, fuente de vitaminas y fibra, ideal para meriendas y platos saludables.",
+        "image_url": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos/manzana.jpg"
+    },
+
+    {
+        "name": "Naranja",
+        "description": "La naranja, fruta cítrica, es jugosa, dulce y llena de vitamina C, perfecta para refrescarse y disfrutar.",
+        "image_url": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos/naranja.jpg"
+    },
+
+    {
+        "name": "Plátano",
+        "description": "Deliciosa fruta amarilla, fuente de energía y potasio, ideal para un snack saludable.",
+        "image_url": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos/platano.jpg"
+    },
+
+    {
+        "name": "Pera",
+        "description": "Fruta jugosa, dulce y rica en fibra, ideal para un bocado fresco y saludable.",
+        "image_url": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos/pera.jpg"
+    },
+
+    {
+        "name": "Arándanos",
+        "description": "Pequeñas joyas azules, llenas de antioxidantes y sabor fresco, perfectas para postres y desayunos.",
+        "image_url": "https://raw.githubusercontent.com/ElbaCalvo/DI/main/recursos/arandanos.jpg"
     }
 ]
